@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
+import { faFacebook, faGoogle, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './footer.css'
 
 const Footer = () => {
@@ -13,34 +16,29 @@ const Footer = () => {
       <img src={logo} alt="" width="150"></img>
       <div className="footerLinks">
         <div className="footerSocial">
-          <a href="#">
+          <a href="">
             <div>
-              <i className="fa-brands fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/rtsoft.cz/" target='blank'>
+            <div>
+              <FontAwesomeIcon icon={faInstagram} ></FontAwesomeIcon>
             </div>
           </a>
           <a href="#">
             <div>
-              <i className="fa-brands fa-instagram"></i>
+              <FontAwesomeIcon icon={faGoogle} ></FontAwesomeIcon>
             </div>
           </a>
-          <a href="#">
+          <a href="tel:+420731190202">
             <div>
-              <i className="fa-brands fa-google"></i>
+              <FontAwesomeIcon icon={faPhone} ></FontAwesomeIcon>
             </div>
           </a>
-          <a href="#">
+          <a href="mailto:info@rtsoft.cz">
             <div>
-              <i className="fa-solid fa-phone"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <i className="fa-brands fa-facebook"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div>
-              <i className="fa-brands fa-facebook"></i>
+              <FontAwesomeIcon icon={faGoogle} ></FontAwesomeIcon>
             </div>
           </a>
         </div>
@@ -51,7 +49,7 @@ const Footer = () => {
           <p>|</p>
           <Link to="/contact" onClick={handleScrollToTop}>Kontakt</Link>
           <p>|</p>
-          <Link to="/termsAndConditions" onClick={handleScrollToTop}>AdminPanel</Link>
+          <Link to="/" onClick={handleScrollToTop}>AdminPanel</Link>
         </div>
       </div>
       <div className="bottomInfo">

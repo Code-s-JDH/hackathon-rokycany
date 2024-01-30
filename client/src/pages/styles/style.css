@@ -7,8 +7,17 @@
   width: 800px;
 }
 
-.mainText {
-  
+.button1 {
+  background-color: #30a435;;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  padding: 5px 10px;
+}
+
+.button1:hover {
+  background: #fff;
+  transition: 200ms;
 }
 
 /* Main */

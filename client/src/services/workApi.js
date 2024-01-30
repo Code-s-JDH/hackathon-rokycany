@@ -1,20 +1,18 @@
 import axios from '../api/axios';
-const serverUrl = 'http://localhost:8080';
+const serverUrl = 'http://72f06y-ip-185-68-28-20.tunnelmole.net';
 
-const work = async () => {
+const getWorks = async () => {
   try {
-    const response = await axios.post(`${serverUrl}/register`, userData, {
+    const response = await axios.get(`${serverUrl}/api/v1/position`, {
       headers: {
         'Content-Type': 'application/json',
       },
-      withCredentials: true,
     });
-
-    return response;
+    return response.data;
   } catch (error) {
     if (error.response) {
       const errorData = error.response.data;
-      throw new Error(errorData.message || 'Chyba při registraci uživatele');
+      throw new Error(errorData.message || 'Chyba při získávání pozic');
     } else if (error.request) {
       console.error('Chyba při odesílání požadavku:', error.request);
       throw new Error('Chyba při odesílání požadavku');
@@ -24,3 +22,5 @@ const work = async () => {
     }
   }
 };
+
+export { getWorks};

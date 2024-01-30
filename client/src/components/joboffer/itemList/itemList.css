@@ -1,0 +1,26 @@
+.itemList {
+  z-index: -2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.item {
+  margin: 40px 0px 20px 0px;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.scrollToTopBtn svg {
+  margin-right: 10px;
+}

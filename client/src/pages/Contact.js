@@ -32,30 +32,6 @@ export const Contact = () => {
           contactOptionDesc={"lorem lorem"}
         />
       </section>
-      <section className="questions">
-        <div>
-          <p className="fontSectionName leftText">Dotazy&#128129;</p>
-          <p className="fontHeader leftText">Nebojte se zeptat.</p>
-          <p className="fontParagraph leftText">Pokud máte dotaz ohledně objednávky nebo fakturace, prosím uveďte číslo objednávky nebo faktury, pokud je k dispozici. Budeme se snažit odpovědět co nejdříve a pomoci Vám s jakýmkoli dotazem nebo problémem, se kterým se na nás obrátíte.</p>
-        </div>
-        <div>
-          <div className="questionForm">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Vaše jméno" className="fontHeader5"></input>
-                <input type="text" placeholder="Zadejte e-mail" className="fontHeader5"></input>
-              </div>
-              <div>
-                <textarea name="" id="" cols="30" rows="11" placeholder="Zeptejte se na cokoli" className="fontHeader5"></textarea>
-              </div>
-              <button type="submit">
-                <i className="fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-          <div className="blueGradientR"></div>
-        </div>
-      </section>
     </main>
   </>)
 }
