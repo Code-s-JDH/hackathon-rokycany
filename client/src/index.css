@@ -39,8 +39,8 @@ a {
   color: #000;
 }
 
-a:hover {
-  text-decoration: underline #fff;
+a:active {
+  color: #30a435;
 }
 
 input {
@@ -111,7 +111,7 @@ input {
 
 .fontParagraph {
   font-size: 15px;
-  font-family: Lora;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   max-width: 500px;
   margin-top: 5px;
