@@ -1,5 +1,5 @@
 package domain
 
 type SuccessResponse struct {
-	Status string `json:"staus"`
+	Status string `json:"status"`
 }

@@ -18,7 +18,9 @@ func (pc *PositionController) GetAll(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, domain.ErrorResponse{Message: err.Error()})
 		return
 	}
-	c.JSON(http.StatusOK, data)
+	c.JSON(http.StatusOK, map[string]interface{}{
+		"data": data,
+	})
 }
 func (pc *PositionController) GetById(c *gin.Context) {
 	id := c.Params.ByName("id")
