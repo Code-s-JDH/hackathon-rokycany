@@ -1,5 +1,5 @@
 import axios from '../api/axios';
-const serverUrl = 'http://localhost:8080';
+const serverUrl = 'http://localhost:4001';
 
 const registerUser = async (userData) => {
   try {
@@ -56,6 +56,7 @@ const logoutUser = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
+      // Případně můžete přidat další nastavení, např. autentizační tokeny
     });
 
     if (!response.ok) {

@@ -1,0 +1,97 @@
+.registerHeader {
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.registerHeader nav {
+    width: 80%;
+}
+
+.register {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background: #FFF;
+    height: 450px;
+    width: 600px;
+}
+
+.register > div {
+    width: 80%;
+    margin: 5% auto;
+    overflow: hidden !important;
+}
+
+.register form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register form div {
+    width: 40%;
+    position: relative;
+}
+
+.register form input {
+    overflow: hidden;
+    margin: 10px auto;
+    margin-bottom: 0;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    height: 40px;
+    width: 100%;
+}
+
+.register button {
+    height: 60px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+}
+
+.register p:last-child {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    bottom: 20px;
+}
+
+.register a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.register label {
+    position: absolute;
+    margin-top: 20px;
+    right: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}

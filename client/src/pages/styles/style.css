@@ -1,0 +1,173 @@
+/* Header Section*/
+
+.backgroundBuilding img {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  width: 800px;
+}
+
+.mainText {
+  
+}
+
+/* Main */
+
+img {
+  position: relative;
+  z-index: -5;
+}
+
+.productCategory {
+  color: #000;
+  text-align: center;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.productCategory a {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.productCategory > div:not(.button) {
+  margin: 0px auto;
+  background-color: #FFF;
+  width: 250px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.productCategory div p {
+  margin: 0px auto;
+  color: #000;
+}
+
+.productCategory div p:first-child {
+  margin: 50px 0px 15px;
+}
+
+.productCategory div p:last-child {
+  height: 100px;
+}
+
+
+.button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  margin: 0px auto;
+  background-color: #0B0617;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainContent {
+  margin-top: 100px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.mainContent > div > div{
+  width: 50%;
+}
+
+.mainContent > div:not(.socialContent, .reviewContent) {
+  margin-top: 300px;
+}
+
+.mainContent > div div.redGradientR {
+  position: absolute;
+  margin-top: -200px;
+  right: -200px;
+}
+
+.mainContent > div div.blueGradientL {
+  position: absolute;
+  margin-top: -200px;
+  left: -200px;
+}
+
+.mainContent > div:not(.review, .socialContent) {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.mainContent > div:not(.review, .reviewContent) div:last-child img:last-child,
+.mainContent > div:not(.review, .reviewContent) div:last-child p:last-child{
+  float: right;
+  clear: right;
+  text-align: right;
+}
+
+.reviewContent {
+  margin-top: 150px;
+}
+
+.reviewContent p {
+  color: #000;
+}
+
+.reviewContent > div {
+  text-align: center;
+  color: #000;
+  max-width: 250px;
+  background-color: #FFF;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.reviewContent i {
+  font-size: 25px;
+  color: #FFF;
+  margin: 5px;
+}
+
+.reviewContent > div div:first-child {
+  margin: 20px;
+  background-color: #0B0617;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.reviewContent div p {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.socialContent {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialContent i {
+  font-size: 40px;
+  color: #0B0617;
+  align-items: center;
+}
+
+.socialContent table tr td a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}

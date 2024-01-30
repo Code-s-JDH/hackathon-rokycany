@@ -1,0 +1,95 @@
+.contactOptions {
+    color: #000;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactOptions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.contactOptions svg {
+    margin: 75px 0px 20px 0px;
+    color: #000;
+    font-size: 60px;
+}
+
+.questions {
+    color: #fff;
+    margin: 200px 0px 200px 0px;
+    display: flex;
+}
+
+.questions > div {
+    width: 50%;
+}
+
+.questionForm {
+    height: 360px;
+    background: #fff;
+    border-radius: 25px;
+    position: relative;
+}
+
+.questionForm form {
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden !important;
+}
+
+.questionForm form div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.questionForm textarea,
+.questionForm input {
+    margin: 20px auto;
+    outline: none;
+}
+
+.questionForm form div:nth-child(2) {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.questionForm textarea {
+    width: 95%;
+    margin: 10px 0px 10px;
+    resize: none;
+    border: 0;
+}
+
+.questionForm textarea::placeholder {
+    margin-left: 10px;
+}
+
+.questionForm button {
+    position: absolute;
+    border: 0;
+    border-radius: 100%;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.questionForm button i {
+    font-size: 20px;
+}
+
+.questions div.blueGradientR {
+    position: absolute;
+    margin-top: -200px;
+    right: -400px;
+}

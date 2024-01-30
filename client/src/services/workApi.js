@@ -1,7 +1,7 @@
 import axios from '../api/axios';
 const serverUrl = 'http://localhost:8080';
 
-const  = async (userData) => {
+const work = async () => {
   try {
     const response = await axios.post(`${serverUrl}/register`, userData, {
       headers: {
