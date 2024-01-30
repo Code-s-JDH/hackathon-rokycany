@@ -1,0 +1,146 @@
+/* navbar.css */
+
+/* Základní styly */
+.navPanel {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  margin: 50px auto;
+  z-index: 100;
+  transition: height 0.5s;
+  width: 100%;
+}
+
+.navPanel.navbarScroll{
+  height: 75px;
+  position: fixed;
+  margin: 0px auto;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  transition: height 0.5s;
+  box-shadow: 3px 3px 30.8px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navPanel div {
+  display: flex;
+  align-items: center;
+}
+
+.navPanel svg {
+  font-size: 25px;
+}
+
+.navPanel div a {
+  margin: 0 15px 0 15px;
+}
+
+.searchBar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.searchBar input {
+  padding: 5px 10px;
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  outline: hidden;
+  background-color: transparent;
+}
+
+.basketNav {
+  float: right;
+}
+
+.basketNav div {
+  margin: -40px 0px 0px 18px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #CB0035;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styly pro responzivitu a hamburger menu */
+
+.hamburger {
+  margin: 0 15px 0 15px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Oprava pro responzivitu */
+@media only screen and (max-width: 1200px) {
+  .navPanel {
+    height: 75px;
+    position: fixed !important;
+    margin: 0px auto;
+    background-color: transparent;
+    width: 100% !important;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .navPanel.navbarScroll {
+    height: 75px;
+    position: sticky;
+    margin: 0px auto;
+    background-color: #fff;
+    width: 100% !important;
+    left: 0;
+    transition: all 0.5s;
+  }
+  
+  .hideNavLinks > a {
+    display: none;
+  }
+
+  .navLinks.showMenu {
+    display: flex;
+    background-color: #0B0617;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .navLinks.showMenu a {
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+
+  .searchBar {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchBar input {
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
