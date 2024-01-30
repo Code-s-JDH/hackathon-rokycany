@@ -1,10 +1,12 @@
 package usecase
 
 import (
+	"rtsofthr/domain"
+
 	"time"
 )
 
 type authUsecase struct {
-	authUsecase    *domain.authUsecase
+	authRepository *domain.AuthRepository
 	contextTimeout time.Duration
 }

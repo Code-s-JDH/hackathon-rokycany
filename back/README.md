@@ -24,12 +24,12 @@ api/v2/work/:id GET
 api/v2/work/:id PUT
 api/v2/work/:id DELETE
 
-api/v2/workRequests:
-api/v2/workRequests/ GET
-api/v2/workRequests/ POST
-api/v2/workRequests/:id GET
-api/v2/workRequests/:id PUT
-api/v2/workRequests/:id DELETE
+api/v2/position:
+api/v2/position/ GET
+api/v2/position/ POST
+api/v2/position/:id GET
+api/v2/position/:id PUT
+api/v2/position/:id DELETE
 
 ## API REQUESTS
 
@@ -53,15 +53,15 @@ api/v1/auth/reg POST
 Type | JSON
 --- | ---
 Request | {"username": "name", "password": "something", "email": "admin@gmail.com"}
-Response | {"status"}
-Error response | {"status": "ok"}
+Response | {"status": "ok"}
+Error response | {"message": "ok"}
 
 api/v1/auth/log POST
 Type | JSON
 --- | ---
 Request | {"username": "name", "password": "something"}
 Response | {"token": "qweljqwlejo123uj.oodjwoi1j2320j.1230udwq"}
-Error response | {"status": "ok"}
+Error response | {"message": "ok"}
 
 ### Work
 

@@ -3,6 +3,7 @@ package route
 import (
 	"rtsofthr/bootstrap"
 	"rtsofthr/domain"
+	"rtsofthr/repository"
 	"time"
 
 	"github.com/gin-gonic/gin"
