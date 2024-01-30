@@ -108,7 +108,7 @@
 
   .navLinks.showMenu {
     display: flex;
-    background-color: #0B0617;
+    background-color: #fff;
     align-items: center;
     flex-direction: column;
     position: absolute;

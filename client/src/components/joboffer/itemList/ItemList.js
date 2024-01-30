@@ -14,8 +14,9 @@ const ItemList = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const data = await getWorks();
-      setItems(data);
+
+      const response = await getWorks();
+      setItems(response.data);
 
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -37,6 +38,7 @@ const ItemList = () => {
     });
   };
 
+  console.log(items)
   return (
     <>
       <div className='itemList'>

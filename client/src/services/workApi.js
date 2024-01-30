@@ -8,7 +8,6 @@ const getWorks = async () => {
         'Content-Type': 'application/json',
       },
     });
-    console.log(response.data)
     return response.data;
   } catch (error) {
     if (error.response) {
