@@ -1,9 +1,10 @@
 package main
 
 import (
-	"rtsofthr/api/route"
-	"rtsofthr/bootstrap"
 	"time"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/api/route"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/bootstrap"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"

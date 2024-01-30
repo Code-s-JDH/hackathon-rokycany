@@ -1,4 +1,4 @@
-module rtsofthr
+module "github.com/Code-s-JDH/hackathon-rokycany/back"
 
 go 1.21.5
 

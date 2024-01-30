@@ -2,8 +2,9 @@ package tokenutil
 
 import (
 	"fmt"
-	"rtsofthr/domain"
 	"time"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
 
 	"github.com/golang-jwt/jwt/v4"
 )

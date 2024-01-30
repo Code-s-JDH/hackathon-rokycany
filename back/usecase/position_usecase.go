@@ -2,8 +2,9 @@ package usecase
 
 import (
 	"context"
-	"rtsofthr/domain"
 	"time"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
 )
 
 type positionUsecase struct {

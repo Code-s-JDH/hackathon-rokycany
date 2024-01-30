@@ -1,12 +1,13 @@
 package route
 
 import (
-	"rtsofthr/api/controller"
-	"rtsofthr/bootstrap"
-	"rtsofthr/domain"
-	"rtsofthr/repository"
-	"rtsofthr/usecase"
 	"time"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/api/controller"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/bootstrap"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/repository"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/usecase"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jmoiron/sqlx"

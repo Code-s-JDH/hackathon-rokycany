@@ -1,8 +1,9 @@
 package route
 
 import (
-	"rtsofthr/bootstrap"
 	"time"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/bootstrap"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jmoiron/sqlx"

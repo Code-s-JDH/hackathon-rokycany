@@ -2,9 +2,10 @@ package middleware
 
 import (
 	"net/http"
-	"rtsofthr/domain"
-	"rtsofthr/internal/tokenutil"
 	"strings"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/internal/tokenutil"
 
 	"github.com/gin-gonic/gin"
 )

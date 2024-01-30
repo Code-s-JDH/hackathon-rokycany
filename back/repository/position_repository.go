@@ -3,8 +3,9 @@ package repository
 import (
 	"context"
 	"fmt"
-	"rtsofthr/domain"
 	"strings"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
 
 	"github.com/jmoiron/sqlx"
 )
@@ -48,8 +49,8 @@ func (pr *positionRepository) GetById(c context.Context, posId int) (domain.Posi
 	return data, err
 }
 func (pr *positionRepository) Create(c context.Context, pos domain.Position) error {
-	query := fmt.Sprintf("INSERT INTO %s (id, title, description, tags) VALUES ($1, $2, $3, $4)", pr.table)
-	_, err := pr.database.Exec(query, pos.Id, pos.Title, pos.Description, pos.Tags)
+	query := fmt.Sprintf("INSERT INTO %s (title, description, tags) VALUES ($1, $2, $3)", pr.table)
+	_, err := pr.database.Exec(query, pos.Title, pos.Description, pos.Tags)
 	return err
 }
 func (pr *positionRepository) Update(c context.Context, pos domain.PositionUpdate, posId int) error {

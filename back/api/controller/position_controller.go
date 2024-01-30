@@ -2,8 +2,9 @@ package controller
 
 import (
 	"net/http"
-	"rtsofthr/domain"
 	"strconv"
+
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
 
 	"github.com/gin-gonic/gin"
 )
@@ -19,6 +20,9 @@ func (pc *PositionController) GetAll(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, data)
+	c.JSON(http.StatusOK, map[string]interface{}{
+		"data": data,
+	})
 }
 func (pc *PositionController) GetById(c *gin.Context) {
 	id := c.Params.ByName("id")

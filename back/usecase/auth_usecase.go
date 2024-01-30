@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"rtsofthr/domain"
+	"github.com/Code-s-JDH/hackathon-rokycany/back/domain"
 
 	"time"
 )
