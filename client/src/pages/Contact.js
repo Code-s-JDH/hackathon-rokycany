@@ -19,7 +19,7 @@ export const Contact = () => {
         <ContactOption
           contactOptionIcon={faEnvelope}
           contactOptionName={"Napište nám"}
-          contactOptionDesc={"jelen.lukas@email.cz"}
+          contactOptionDesc={"info@rtsoft.cz"}
         />
         <ContactOption
           contactOptionIcon={faPhone}
@@ -29,7 +29,7 @@ export const Contact = () => {
         <ContactOption
           contactOptionIcon={faHouse}
           contactOptionName={"Kde nás najdete?"}
-          contactOptionDesc={"lorem lorem"}
+          contactOptionDesc={"Lobezská 39 Plzeň"}
         />
       </section>
     </main>
