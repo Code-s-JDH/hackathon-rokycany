@@ -23,6 +23,6 @@ func App() *Application {
 	if err != nil {
 		log.Fatalf(err.Error())
 	}
-	app.Env = env
+	app.Database = db
 	return app
 }

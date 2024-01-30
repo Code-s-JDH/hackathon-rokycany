@@ -1,6 +1,7 @@
 package main
 
 import (
+	"rtsofthr/api/route"
 	"rtsofthr/bootstrap"
 	"time"
 
@@ -19,6 +20,6 @@ func main() {
 	gin.Use(bootstrap.CORS())
 
 	timeout := 10 * time.Second
-	// route.NewRoute(env, timeout, db, gin)
+	route.NewRoute(env, timeout, db, gin)
 	gin.Run(":" + env.SERVERport)
 }
