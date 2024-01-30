@@ -1,8 +1,5 @@
 .link_on_user_page{
+    display: block;
     width: 40px;
-    height: 40px;
-}
-.link_on_user_page{
-    background-color: var(--color_grey);
-    transition: 200ms;
+    height: 40px
 }
