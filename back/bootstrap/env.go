@@ -1,6 +1,7 @@
 package bootstrap
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/joho/godotenv"
@@ -54,5 +55,6 @@ func NewEnv() (*Env, error) {
 	env.DBpassword = os.Getenv("DB_PASSWORD")
 	env.SECRET = os.Getenv("SECRET_KEY")
 
+	fmt.Print(env)
 	return &env, nil
 }

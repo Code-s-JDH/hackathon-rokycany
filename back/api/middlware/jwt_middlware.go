@@ -18,6 +18,10 @@ func JwrAuthMiddleware(secret string) gin.HandlerFunc {
 			authorized, err := tokenutil.IsAuthorized(authToken, secret)
 			if authorized {
 				userId, err := tokenutil.GetIdFromClaims(authToken, secret)
+				if err != nil {
+					c.JSON(http.StatusUnauthorized, domain.ErrorResponse{Message: err.Error()})
+					c.Abort()
+				}
 			}
 			c.JSON(http.StatusUnauthorized, domain.ErrorResponse{Message: err.Error()})
 			c.Abort()
