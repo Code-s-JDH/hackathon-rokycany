@@ -16,20 +16,13 @@ api/v1/auth/reg POST<br>
 api/v1/auth/log POST<br>
 
 <!-- api/v1/auth/reg POST -->
+api/v1/position:<br>
+api/v1/position/ GET<br>
+api/v1/position/ POST<br>
+api/v1/position/:id GET<br>
+api/v1/position/:id PUT<br>
+api/v1/position/:id DELETE<br>
 
-api/v2/work:<br>
-api/v2/work/ GET<br>
-api/v2/work/ POST<br>
-api/v2/work/:id GET<br>
-api/v2/work/:id PUT<br>
-api/v2/work/:id DELETE<br>
-
-api/v2/position:<br>
-api/v2/position/ GET<br>
-api/v2/position/ POST<br>
-api/v2/position/:id GET<br>
-api/v2/position/:id PUT<br>
-api/v2/position/:id DELETE<br>
 
 ## API REQUESTS
 
