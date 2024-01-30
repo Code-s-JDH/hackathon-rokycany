@@ -2,6 +2,7 @@ package main
 
 import (
 	"rtsofthr/bootstrap"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
@@ -15,9 +16,9 @@ func main() {
 
 	// // Setup of git framework
 	gin := gin.Default()
-	// gin.Use(bootstrap.CORS())
+	gin.Use(bootstrap.CORS())
 
-	// timeout := 10 * time.Second
+	timeout := 10 * time.Second
 	// route.NewRoute(env, timeout, db, gin)
-	// gin.Run(":" + env.SERVERport)
+	gin.Run(":" + env.SERVERport)
 }

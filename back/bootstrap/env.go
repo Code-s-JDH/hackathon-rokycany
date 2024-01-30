@@ -32,7 +32,7 @@ func NewEnv() (*Env, error) {
 	env := Env{}
 
 	// Load config
-	viper.SetConfigName(ConfigName)
+	viper.SetConfigName("config")
 	viper.AddConfigPath("config")
 	if err := viper.ReadInConfig(); err != nil {
 		return &env, err
@@ -44,7 +44,6 @@ func NewEnv() (*Env, error) {
 	}
 
 	// Set environment
-	env.ENVtype = viper.GetString("Env")
 	env.SERVERport = viper.GetString("server.PORT")
 	env.DBport = viper.GetString("db.PORT")
 	env.DBhost = viper.GetString("db.HOST")
@@ -53,7 +52,7 @@ func NewEnv() (*Env, error) {
 	env.DBname = viper.GetString("db.DBNAME")
 
 	env.DBpassword = os.Getenv("DB_PASSWORD")
-	env.ENVsecretkey = os.Getenv("SECRET_KEY")
+	env.SECRET = os.Getenv("SECRET_KEY")
 
 	return &env, nil
 }
