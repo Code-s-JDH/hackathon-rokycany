@@ -24,8 +24,8 @@ func NewPositionRepository(db *sqlx.DB, collection string) *positionRepository {
 }
 func (pr *positionRepository) GetAll(c context.Context) ([]domain.Position, error) {
 	var data []domain.Position
-	query := fmt.Sprintf("SELECT * FROM %s", pu.table)
-	rows, err := pu.database.Query(query)
+	query := fmt.Sprintf("SELECT * FROM %s", pr.table)
+	rows, err := pr.database.Query(query)
 	if err != nil {
 		return data, nil
 	}
@@ -41,10 +41,10 @@ func (pr *positionRepository) GetAll(c context.Context) ([]domain.Position, erro
 	}
 	return data, nil
 }
-func (pr *positionRepository) GetById(c context.Context) (domain.Position, error) {
+func (pr *positionRepository) GetById(c context.Context, posId int) (domain.Position, error) {
 	var data domain.Position
-	query := fmt.Sprintf("SELECT * from %s WHERE id=$1")
-	err := pr.database.QueryRow(query, pr.table).Scan(&dataEl.Id, &dataEl.Title, &dataEl.Description, &dataEl.Tags)
+	query := fmt.Sprintf("SELECT * from %s WHERE id=$1", pr.table)
+	err := pr.database.QueryRow(query, posId).Scan(&data.Id, &data.Title, &data.Description, &data.Tags)
 	return data, err
 }
 func (pr *positionRepository) Create(c context.Context, pos domain.Position) error {
@@ -57,17 +57,17 @@ func (pr *positionRepository) Update(c context.Context, pos domain.PositionUpdat
 	args := make([]interface{}, 0)
 	argId := 1
 	if pos.Title != "" {
-		setValues = append(setValues, fmt.Sprintf("title='%v'", pos.Name))
+		setValues = append(setValues, fmt.Sprintf("title='%v'", pos.Title))
 		args = append(args, fmt.Sprintf("$%d", argId))
 		argId++
 	}
-	if pos.Description > 0 {
-		setValues = append(setValues, fmt.Sprintf("description=%v", pos.Price))
+	if pos.Description != "" {
+		setValues = append(setValues, fmt.Sprintf("description=%v", pos.Description))
 		args = append(args, fmt.Sprintf("$%d", argId))
 		argId++
 	}
 	if pos.Tags != "" {
-		setValues = append(setValues, fmt.Sprintf("tags='%v'", pos.Description))
+		setValues = append(setValues, fmt.Sprintf("tags='%v'", pos.Tags))
 		args = append(args, fmt.Sprintf("$%d", argId))
 		argId++
 	}
@@ -77,6 +77,7 @@ func (pr *positionRepository) Update(c context.Context, pos domain.PositionUpdat
 	_, err := pr.database.Exec(query)
 	return err
 }
+
 func (pr *positionRepository) Delete(c context.Context, posId int) error {
 	query := fmt.Sprintf("DELETE FROM %s WHERE id=$1", pr.table)
 	_, err := pr.database.Exec(query, posId)

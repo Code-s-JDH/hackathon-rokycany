@@ -19,14 +19,14 @@ type PositionUpdate struct {
 }
 type PositionUsecase interface {
 	GetAll(c context.Context) ([]Position, error)
-	GetById(c context.Context) (Position, error)
+	GetById(c context.Context, posId int) (Position, error)
 	Create(c context.Context, pos Position) error
 	Update(c context.Context, pos PositionUpdate, posId int) error
 	Delete(c context.Context, posId int) error
 }
 type PositionRepository interface {
 	GetAll(c context.Context) ([]Position, error)
-	GetById(c context.Context) (Position, error)
+	GetById(c context.Context, posId int) (Position, error)
 	Create(c context.Context, pos Position) error
 	Update(c context.Context, pos PositionUpdate, posId int) error
 	Delete(c context.Context, posId int) error
