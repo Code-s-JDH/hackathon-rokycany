@@ -11,6 +11,6 @@ import (
 )
 
 func NewPositionsRouter(env *bootstrap.Env, timeout time.Duration, db *sqlx.DB, group *gin.RouterGroup) {
-	tr := repository.NewPositionsRouter(db, domain.CollectionPosition)
+	tr := repository.NewPositionsRepository(db, domain.CollectionPosition)
 
 }
