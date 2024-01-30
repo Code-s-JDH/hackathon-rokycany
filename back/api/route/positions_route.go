@@ -2,6 +2,7 @@ package route
 
 import (
 	"rtsofthr/bootstrap"
+	"rtsofthr/domain"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -10,4 +11,5 @@ import (
 
 func NewPositionsRouter(env *bootstrap.Env, timeout time.Duration, db *sqlx.DB, group *gin.RouterGroup) {
 	tr := repository.NewPositionsRouter(db, domain.CollectionPosition)
+
 }
