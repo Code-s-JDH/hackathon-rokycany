@@ -22,10 +22,13 @@ func JwrAuthMiddleware(secret string) gin.HandlerFunc {
 					c.JSON(http.StatusUnauthorized, domain.ErrorResponse{Message: err.Error()})
 					c.Abort()
 				}
+				c.Set("userId", userId)
+				c.Next()
+				return
 			}
 			c.JSON(http.StatusUnauthorized, domain.ErrorResponse{Message: err.Error()})
 			c.Abort()
-			return
+
 		}
 		c.JSON(http.StatusUnauthorized, domain.ErrorResponse{Message: "Not authorized"})
 		c.Abort()

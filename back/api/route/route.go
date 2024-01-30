@@ -9,7 +9,9 @@ import (
 )
 
 func NewRoute(env *bootstrap.Env, timeout time.Duration, db *sqlx.DB, gin *gin.Engine) {
-	// publicRoter := gin.Group("api/v1")
+	publicRoter := gin.Group("api/v1")
+	NewPositionsRouter(env, timeout, db, publicRoter)
+
 	privateRoter := gin.Group("api/v2")
 	privateRoter.Use()
 
