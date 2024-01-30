@@ -1,0 +1,18 @@
+*{
+--color_light_grey: #f0f0f0;
+}
+
+*{
+--color_grey: #cfcfcf;
+}
+
+*{
+--color_green: #62a132;
+}
+*{
+--color_dark_green: #608c3e;
+}
+body{
+background-color: var(white);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

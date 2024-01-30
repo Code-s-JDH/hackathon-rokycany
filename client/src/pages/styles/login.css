@@ -1,0 +1,90 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    height: 100%;
+}
+
+.login > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background: #FFF;
+    height: 450px;
+    width: 375px;
+}
+
+.login p.fontHeader2 {
+    max-width: 75%;
+    margin: 40px auto;
+}
+
+.userInputs {
+    margin-top: 20px;
+}
+
+.userInput {
+    display: flex;
+    width: 75%;
+    border-bottom: 2px solid #000;
+    margin: 0px auto;
+}
+
+.userInput input {
+    width: 90%;
+    margin-bottom: 0;
+    display: block;
+    outline: none;
+    border: none;
+    height: 40px;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.login label {
+    display: flex;
+    align-items: center;
+}
+
+.login button {
+    height: 60px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+}
+
+.loginDetails {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loginDetails p {
+    margin: 5px;
+}
+.loginDetails p.fontHeader3 {
+    width: 40%;
+}
+
+.login a {
+    color: #000;
+    text-decoration: underline;
+}

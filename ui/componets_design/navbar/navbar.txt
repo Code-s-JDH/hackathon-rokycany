@@ -1,0 +1,1 @@
+pozadí navbaru je  var(--color_light_grey)

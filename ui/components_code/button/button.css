@@ -1,0 +1,11 @@
+.button{
+    background: var(--color_green);
+    border: solid 1px var(--color_dark_green);
+    border-radius:5px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button:hover{
+    background: var(--color_dark_green);
+    transition: 200ms;
+}
