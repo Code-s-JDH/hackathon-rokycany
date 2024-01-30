@@ -7,6 +7,7 @@
 }
 
 .login > div {
+    box-shadow: 1px 1px 10.8px 2px rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 50%;
     left: 50%;

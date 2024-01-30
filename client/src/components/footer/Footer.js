@@ -49,7 +49,7 @@ const Footer = () => {
           <p>|</p>
           <Link to="/contact" onClick={handleScrollToTop}>Kontakt</Link>
           <p>|</p>
-          <Link to="/termsAndConditions" onClick={handleScrollToTop}>AdminPanel</Link>
+          <Link to="/" onClick={handleScrollToTop}>AdminPanel</Link>
         </div>
       </div>
       <div className="bottomInfo">

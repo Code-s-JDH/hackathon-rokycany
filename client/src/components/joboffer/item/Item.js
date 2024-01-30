@@ -21,19 +21,20 @@ const Item = ({ item }) => {
   return (
     <div className='item'>
       <div className='itemUp'>
-        <Link to={`/item/${item.id}`} onClick={handleScrollToTop} aria-label={`Zobrazit detaily produktu ${item.id}`}>
+        <Link to={`mailto:info@rtsoft.cz`} onClick={handleScrollToTop} aria-label={`${item.title}`}>
           <img
-            src={`http://localhost:4001/downloads/${item.id}.jpg`}
-            alt={`Produkt: ${item.id}`}
-            onError={handleImageError}
+            src={`https://www.pngfind.com/pngs/b/348-3484461_png-file-svg-programming-language-icon-png-transparent.png`}
+            alt={`Pozice: ${item.title}`}
+            onError={handleImageError} 
             width={100}
           />
         </Link>
       </div>
       <div className='itemDown'>
         <div>
-          <Link to={`/item/${item.no}`} onClick={handleScrollToTop} aria-label={`Zobrazit detaily produktu ${item.name}`}>
-            <p className='fontHeader2C'>{item.id}</p>
+          <Link to={`/item/${item.no}`} onClick={handleScrollToTop} aria-label={`${item.description}`}>
+            <p className='fontHeader2C'>{item.title}</p>
+            <p className='fontHeader3'>{item.description}</p>
           </Link>
         </div>
         <div>
