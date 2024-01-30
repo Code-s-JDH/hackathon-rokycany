@@ -1,17 +1,20 @@
 package main
 
 import (
+	"rtsofthr/bootstrap"
+
+	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 )
 
 func main() {
-	// // Initialize of the project
-	// app := bootstrap.App()
-	// env := app.Env
-	// db := app.Database
+	// Initialize of the project
+	app := bootstrap.App()
+	env := app.Env
+	db := app.Database
 
 	// // Setup of git framework
-	// gin := gin.Default()
+	gin := gin.Default()
 	// gin.Use(bootstrap.CORS())
 
 	// timeout := 10 * time.Second

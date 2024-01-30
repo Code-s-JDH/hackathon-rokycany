@@ -1,2 +1,9 @@
 server:
   PORT: 8080
+
+db:
+  PORT: 5436
+  NAME: "postgres"
+  USERNAME: "portgres"
+  SSLMODE: "disabled"
+  HOST: "localhost"

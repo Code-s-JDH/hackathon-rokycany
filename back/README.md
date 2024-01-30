@@ -37,7 +37,9 @@ api/v2/workRequests/:id DELETE
 
 ```kt {"id":"01HNCP1T6D2TV5DJT3HDX6N0F5"}
 claims {
-
+    "id": 1234123,
+    "username": "Username",
+    "role": "admin"
 }
 
 Header: Authorization
