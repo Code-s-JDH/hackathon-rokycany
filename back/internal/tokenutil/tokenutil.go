@@ -11,8 +11,8 @@ import (
 func CreateAccessToken(user *domain.User, secret string, expiry int) (accessToken string, err error) {
 	exp := time.Now().Add(time.Hour * time.Duration(expiry)).Unix()
 	claims := &domain.JwtClaims{
-		Name: user.Name,
-		Id:   user.Id,
+		Username: user.Username,
+		Id:       user.Id,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: exp,
 		},

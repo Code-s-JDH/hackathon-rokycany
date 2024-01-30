@@ -39,7 +39,8 @@ api/v2/workRequests/:id DELETE
 claims {
     "id": 1234123,
     "username": "Username",
-    "role": "admin"
+    "role": "admin",
+    "expires": 3600   
 }
 
 Header: Authorization
