@@ -32,7 +32,7 @@ const Item = ({ item }) => {
       </div>
       <div className='itemDown'>
         <div>
-          <Link to={`/item/${item.no}`} onClick={handleScrollToTop} aria-label={`${item.description}`}>
+          <Link to={`mailto:info@rtsoft.cz`} aria-label={`${item.description}`}>
             <p className='fontHeader2C'>{item.title}</p>
             <p className='fontHeader3'>{item.description}</p>
           </Link>
