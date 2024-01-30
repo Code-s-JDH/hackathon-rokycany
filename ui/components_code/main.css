@@ -7,12 +7,12 @@
 }
 
 *{
---color_green: #90BE6D;
+--color_green: #62a132;
 }
 *{
---color_dark_green: #759e55;
+--color_dark_green: #608c3e;
 }
 body{
-background-color: var(--color_light_grey);
+background-color: var(white);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

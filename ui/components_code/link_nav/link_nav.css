@@ -1,15 +1,15 @@
 .nav_link{
     display: block;
-    background-color: var(--color_light_grey); /* případně var(--color_green)*/
+    background-color: white; /* případně var(--color_green)*/
     text-align: center;
     text-decoration: none;
-    border: solid 2px black;
+    border: none;
     border-radius: 5px;
     padding: 5px;
     width: 100px;
     color: black;
 }
 .nav_link:hover{
-    background-color: var(--color_grey); /* případně var(--color_dark_green)*/
+    background-color: var(--color_light_grey); /* případně var(--color_dark_green)*/
     transition: 200ms;
 }
