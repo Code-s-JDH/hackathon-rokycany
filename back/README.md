@@ -8,28 +8,28 @@ runme:
 
 ## API
 
-v1 - Ful open
-v2 - Protected by jwt
+v1 - Ful open<br>
+v2 - Protected by jwt<br>
 
-api/v1/auth:
-api/v1/auth/reg POST
-api/v1/auth/log POST
+api/v1/auth:<br>
+api/v1/auth/reg POST<br>
+api/v1/auth/log POST<br>
 
 <!-- api/v1/auth/reg POST -->
 
-api/v2/work:
-api/v2/work/ GET
-api/v2/work/ POST
-api/v2/work/:id GET
-api/v2/work/:id PUT
-api/v2/work/:id DELETE
+api/v2/work:<br>
+api/v2/work/ GET<br>
+api/v2/work/ POST<br>
+api/v2/work/:id GET<br>
+api/v2/work/:id PUT<br>
+api/v2/work/:id DELETE<br>
 
-api/v2/position:
-api/v2/position/ GET
-api/v2/position/ POST
-api/v2/position/:id GET
-api/v2/position/:id PUT
-api/v2/position/:id DELETE
+api/v2/position:<br>
+api/v2/position/ GET<br>
+api/v2/position/ POST<br>
+api/v2/position/:id GET<br>
+api/v2/position/:id PUT<br>
+api/v2/position/:id DELETE<br>
 
 ## API REQUESTS
 
